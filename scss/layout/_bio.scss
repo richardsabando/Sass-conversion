@@ -6,10 +6,11 @@
     
     @media screen and #{$brk-wide}{
         display: inline-block;
+        align-content: center;
     }
-}
-
-.bio img {
+    
+    
+    & img {
   max-width: 70%;
   margin: 0 $margin;
   margin-top: 20px;
@@ -25,26 +26,31 @@
         
     }
     
+        }
+
+        & p {
+          padding: 0 10px;
+          color: $dove-grey;
+          font-size: 1em;
+
+            @media screen and #{$brk-narrow} {
+                max-width: 50%;
+                float: left;
+                font-size: 1.4em;
+                text-align: left;
+            }
+
+            @media screen and #{$brk-wide}{
+
+                  max-width: 50%;
+                float: left;
+                font-size: 1.4em;
+                text-align: left;
+            }
+
+        }
+    
+    
 }
 
-.bio p {
-  padding: 0 10px;
-  color: $dove-grey;
-  font-size: 1em;
-    
-    @media screen and #{$brk-narrow} {
-        max-width: 50%;
-        float: left;
-        font-size: 1.4em;
-        text-align: left;
-    }
-    
-    @media screen and #{$brk-wide}{
-        
-          max-width: 50%;
-        float: left;
-        font-size: 1.4em;
-        text-align: left;
-    }
-  
-}
+

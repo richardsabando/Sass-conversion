@@ -14,7 +14,9 @@
     
     @media screen and #{$brk-wide}{
         margin-top: 0;
+        
 		align-self: center;
+        display: inline-block;
     }
     
    
@@ -25,6 +27,7 @@
    @media screen and #{$brk-wide}{
         margin-left: .65em;
 		margin-right: .65em;
+        float: right;
     }
      
   }
@@ -38,7 +41,7 @@
 	padding: .4em;
 	border-bottom: 1px solid $alabaster;
     
-     @media screen and #{$brk-narrow} {
+     @media screen and #{$brk-wide} {
         
     }
 }
